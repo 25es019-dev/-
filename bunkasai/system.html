@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>販売管理</title>
+  <link rel="stylesheet" href="bunkasai.CSS">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="site-nav" aria-label="メインナビゲーション">
+      <a class="nav-link active" href="system.html" aria-current="page">販売管理</a>
+      <a class="nav-link" href="sales.html">売上管理</a>
+      <a class="nav-link" href="inventory.html">在庫管理</a>
+    </nav>
+  </header>
+  <main>
+    <h1>販売管理</h1>
+    <div id="storage-status" role="alert" hidden></div>
+    <section class="product-list" aria-label="商品別の在庫、価格、販売数">
+      <div class="product-card">
+        <h2>ポテト</h2>
+        <p class="stock-display">ポテト系在庫：<span class="product-stock" aria-live="polite">0</span>個</p>
+        <p class="product-price">価格：<span>500</span>円</p>
+        <p>販売数：<span class="product-sales-count" aria-live="polite">0</span>個</p>
+        <div class="quantity-controls">
+          <button class="quantity-button decrease-button" type="button" data-product-index="0" aria-label="ポテトの販売数を1個減らす" disabled>－</button>
+          <button class="quantity-button increase-button" type="button" data-product-index="0" aria-label="ポテトを1個販売">＋</button>
+        </div>
+      </div>
+      <div class="product-card">
+        <h2>ポテト(ソース付き)</h2>
+        <p class="stock-display">ポテト系在庫：<span class="product-stock" aria-live="polite">0</span>個</p>
+        <p class="product-price">価格：<span>600</span>円</p>
+        <p>販売数：<span class="product-sales-count" aria-live="polite">0</span>個</p>
+        <div class="quantity-controls">
+          <button class="quantity-button decrease-button" type="button" data-product-index="1" aria-label="ポテト(ソース付き)の販売数を1個減らす" disabled>－</button>
+          <button class="quantity-button increase-button" type="button" data-product-index="1" aria-label="ポテト(ソース付き)を1個販売">＋</button>
+        </div>
+      </div>
+      <div class="product-card">
+        <h2>竜田揚げ</h2>
+        <p class="stock-display">竜田揚げ系在庫：<span class="product-stock" aria-live="polite">0</span>個</p>
+        <p class="product-price">価格：<span>600</span>円</p>
+        <p>販売数：<span class="product-sales-count" aria-live="polite">0</span>個</p>
+        <div class="quantity-controls">
+          <button class="quantity-button decrease-button" type="button" data-product-index="2" aria-label="竜田揚げの販売数を1個減らす" disabled>－</button>
+          <button class="quantity-button increase-button" type="button" data-product-index="2" aria-label="竜田揚げを1個販売">＋</button>
+        </div>
+      </div>
+      <div class="product-card">
+        <h2>竜田揚げ(ソース付き)</h2>
+        <p class="stock-display">竜田揚げ系在庫：<span class="product-stock" aria-live="polite">0</span>個</p>
+        <p class="product-price">価格：<span>700</span>円</p>
+        <p>販売数：<span class="product-sales-count" aria-live="polite">0</span>個</p>
+        <div class="quantity-controls">
+          <button class="quantity-button decrease-button" type="button" data-product-index="3" aria-label="竜田揚げ(ソース付き)の販売数を1個減らす" disabled>－</button>
+          <button class="quantity-button increase-button" type="button" data-product-index="3" aria-label="竜田揚げ(ソース付き)を1個販売">＋</button>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="system.js"></script>
+</body>
+</html>

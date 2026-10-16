@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>売上管理</title>
+  <link rel="stylesheet" href="bunkasai.CSS">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="site-nav" aria-label="メインナビゲーション">
+      <a class="nav-link" href="system.html">販売管理</a>
+      <a class="nav-link active" href="sales.html" aria-current="page">売上管理</a>
+      <a class="nav-link" href="inventory.html">在庫管理</a>
+    </nav>
+  </header>
+  <main>
+    <h1>売上管理</h1>
+    <p class="total-amount">売上合計：<span id="sales-amount" aria-live="polite">0</span>円</p>
+    <div id="storage-status" role="alert" hidden></div>
+    <button id="reset-button" type="button">販売データをリセット</button>
+    <p id="unassigned-count" hidden>商品別内訳未記録の販売数：<span id="unassigned-count-value">0</span></p>
+    <section class="product-list" aria-label="商品別の販売数と売上">
+      <div class="product-card">
+        <h2>ポテト</h2>
+        <p class="product-price">価格：<span>500</span>円</p>
+        <p>販売数：<span class="product-count" aria-live="polite">0</span></p>
+        <p>売上合計：<span class="product-total" aria-live="polite">0</span>円</p>
+      </div>
+      <div class="product-card">
+        <h2>ポテト(ソース付き)</h2>
+        <p class="product-price">価格：<span>600</span>円</p>
+        <p>販売数：<span class="product-count" aria-live="polite">0</span></p>
+        <p>売上合計：<span class="product-total" aria-live="polite">0</span>円</p>
+      </div>
+      <div class="product-card">
+        <h2>竜田揚げ</h2>
+        <p class="product-price">価格：<span>600</span>円</p>
+        <p>販売数：<span class="product-count" aria-live="polite">0</span></p>
+        <p>売上合計：<span class="product-total" aria-live="polite">0</span>円</p>
+      </div>
+      <div class="product-card">
+        <h2>竜田揚げ(ソース付き)</h2>
+        <p class="product-price">価格：<span>700</span>円</p>
+        <p>販売数：<span class="product-count" aria-live="polite">0</span></p>
+        <p>売上合計：<span class="product-total" aria-live="polite">0</span>円</p>
+      </div>
+    </section>
+  </main>
+  <script src="bunkasai.js"></script>
+</body>
+</html>
